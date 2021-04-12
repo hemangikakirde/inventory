@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
+
 import './select.dart';
 import 'package:adobe_xd/page_link.dart';
 import './euip.dart';
-import './Form.dart';
+import 'package:inventory/screens/lib/Form.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Category extends StatelessWidget {
