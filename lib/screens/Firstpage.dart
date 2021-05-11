@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:inventory/screens/globals.dart' as g;
 
-class Firstpage extends StatelessWidget {
+class Firstpage extends StatefulWidget {
   Firstpage({
     Key key,
   }) : super(key: key);
+  @override
+  _FirstPageState createState() => _FirstPageState();
+}
+  
+  class _FirstPageState extends State<Firstpage>{
+    bool isload = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +26,7 @@ class Firstpage extends StatelessWidget {
               height: 441.0,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: const AssetImage('lib/assets/pale-218.png'),
                   fit: BoxFit.fill,
                 ),
               ),
@@ -46,7 +53,7 @@ class Firstpage extends StatelessWidget {
               height: 126.0,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: const AssetImage('lib/assets/png.png'),
                   fit: BoxFit.fill,
                 ),
               ),
@@ -56,4 +63,5 @@ class Firstpage extends StatelessWidget {
       ),
     );
   }
+}
 }

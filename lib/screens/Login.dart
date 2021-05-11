@@ -1,11 +1,23 @@
 import 'package:flutter/material.dart';
 import './tabs.dart';
 import 'package:adobe_xd/page_link.dart';
+import 'package:inventory/globals.dart' as g;
+import 'package:inventory/services/auth.dart';
 
-class Login extends StatelessWidget {
+class Login extends StatefulWidget {
   Login({
     Key key,
   }) : super(key: key);
+
+  @override
+  _LoginPageState createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<Login> {
+  String error = '';
+  final AuthServices _auth = AuthServices();
+  final _formKey = GlobalKey<FormState>();
+  bool island = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
